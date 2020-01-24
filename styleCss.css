@@ -1,43 +1,54 @@
 html, body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0; padding: 0;
   }
   body {
-    background: black;
+    display : table;
+    width: 100%;
+    background-image:url('homepage.jpg');
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    opacity: 0.9;
+    }
+
+  #gamescore {
+    margin-top:100px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   canvas {
     border: 1px solid white;
+    background: black;
   }
   #p1
   {
     color:red;
 	position:absolute;
 	left:100px;
-	top:10px;
+	top:200px;
   }
     #p2
   {
     color:red;
 	position:absolute;
 	left:100px;
-	top:30px;
+	top:220px;
   }
   #score
   {
     color:yellow;
     position:absolute;
 	left:155px;
-	top:10px;
+	top:200px;
   }
   #high
   {
     color:yellow;
     position:absolute;
 	left:195px;
-	top:30px;
+	top:220px;
   }
   
 header{
