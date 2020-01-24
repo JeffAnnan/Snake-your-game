@@ -39,3 +39,18 @@ html, body {
 	left:195px;
 	top:30px;
   }
+  
+header{
+    background-color: #353b48;
+    height: 50px;
+    box-shadow: 1px 5px 10px 1px;
+    }
+h1{
+    font-size: 24px;
+    color: #2ecc71;
+    font-weight : bold;
+    }
+#titre{
+    margin: 0px 0px 0px 50%;
+    padding-top: 1%;
+    }
