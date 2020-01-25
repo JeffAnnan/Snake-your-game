@@ -24,14 +24,20 @@ html, body {
   }
   #p1
   {
-    color:red;
+	font-family: 'Bungee Hairline', cursive;
+        font-family: 'Bungee Inline', cursive;
+        font-size: 19px;
+        color:red;
 	position:absolute;
-	left:100px;
+        left:100px;
 	top:200px;
   }
     #p2
   {
-    color:red;
+	font-family: 'Bungee Hairline', cursive;
+        font-family: 'Bungee Inline', cursive;
+        font-size: 19px;
+        color:red;
 	position:absolute;
 	left:100px;
 	top:220px;
@@ -62,6 +68,8 @@ h1{
     font-weight : bold;
     }
 #titre{
+    font-family: 'Bungee Hairline', cursive;
+    font-family: 'Bungee Inline', cursive;
     margin: 0px 0px 0px 50%;
     padding-top: 1%;
     }
