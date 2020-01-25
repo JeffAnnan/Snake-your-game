@@ -29,6 +29,24 @@ var apple = {
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
+
+//function to reset
+function reset(){
+  if(score>max)
+  {
+   max=score;
+  }
+    snake.x = 160;
+    snake.y = 160;
+    snake.cells = [];
+    snake.maxCells = 4;
+    snake.dx = grid;
+    snake.dy = 0;
+    score=0;
+    apple.x = getRandomInt(0, 25) * grid;
+    apple.y = getRandomInt(0, 25) * grid;
+  document.getElementById('high').innerHTML=max;
+}
 // game loop
 function loop() {
   requestAnimationFrame(loop);
@@ -43,18 +61,18 @@ function loop() {
   snake.y += snake.dy;
   // wrap snake position horizontally on edge of screen
   if (snake.x < 0) {
-    snake.x = canvas.width - grid;
+    reset();
   }
   else if (snake.x >= canvas.width) {
-    snake.x = 0;
+    reset();
   }
 
   // wrap snake position vertically on edge of screen
   if (snake.y < 0) {
-    snake.y = canvas.height - grid;
+    reset();
   }
   else if (snake.y >= canvas.height) {
-    snake.y = 0;
+    reset();
   }
   // keep track of where snake has been. front of the array is always the head
   snake.cells.unshift({x: snake.x, y: snake.y});
